@@ -40,7 +40,9 @@ for rodada in range(1,total_de_tentativas + 1): #A tentativa é 3, logo adiciona
         print("Você acertou e fez {} pontos!".format(pontos))
         break
     else:
-        if(maior):
+        if (rodada == total_de_tentativas):
+            print("O número secreto era {}. Você fez {} pontos".format(numero_secreto, pontos))
+        elif(maior):
             print("Você errou! O seu chute foi maior que o número secreto!")
         elif(menor): #poderia utilizar else
             print("Você errou! O seu chute foi menor que o número secreto!")
