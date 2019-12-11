@@ -1,8 +1,10 @@
+import random
+
 print("*********************************")
 print("Bem vindo no jogo de adivinhação!")
 print("*********************************")
 
-numero_secreto = 42
+numero_secreto = random.randrange(1, 101) #round(random.random() * 100) #random() gera entre 0.0 e 1.0
 total_de_tentativas = 3
 
 for rodada in range(1,total_de_tentativas + 1): #A tentativa é 3, logo adicionar 1 aqui facilita o entendimento
