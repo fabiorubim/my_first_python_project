@@ -1,6 +1,6 @@
 def jogar():
     print("*********************************")
-    print("***Bem vindo ao jogo de forca!***")
+    print("###Bem vindo ao jogo de forca!###")
     print("*********************************")
 
     palavra_secreta = "banana"
